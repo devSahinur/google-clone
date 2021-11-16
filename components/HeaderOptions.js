@@ -10,7 +10,7 @@ import {
 
 function HeaderOptions() {
     return (
-        <div>
+        <div className='flex w-full text-gray-700 justify-evenly text-xs lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b-[1px]'>
             {/* Left */}
             <div className="flex space-x-6">
                 <HeaderOption Icon={SearchIcon} title="All"  selected/>
