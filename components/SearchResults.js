@@ -1,3 +1,5 @@
+import PaginationButton from "./PaginationButton"
+
 function SearchResults({results}) {
     console.log(results)
     return (
@@ -17,6 +19,7 @@ function SearchResults({results}) {
                     <p className="line-clamp-2">{result.snippet}</p>
                 </div>
             ))}
+            <PaginationButton />
         </div>
     )
 }
