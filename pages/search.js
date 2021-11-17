@@ -7,6 +7,7 @@ import Response from '../Response';
 
 function Search({results}) {
     const router = useRouter()
+    console.log(results)
     return (
         <div>
           <Head>
@@ -23,9 +24,9 @@ function Search({results}) {
 export default Search
 
 export async function getServerSideProps(context){
-    const useDummyData = true;
+    const useDummyData = false;
 
-    const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}`)
+    const data = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}`)
     .then(res => res.json())
 
     // After the SERVER rendered... pass the result to the client
