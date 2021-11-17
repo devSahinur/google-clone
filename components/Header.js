@@ -27,7 +27,7 @@ function Header() {
                     onClick={() => router.push('/')}
                 />
                 <form className='flex flex-grow py-3 px-6 ml-10 mr-5 border border-gray-200 rounded-full items-center max-w-3xl shadow-lg'>
-                    <input className="flex-grow w-full hover:outline-none focus:outline-none" ref={searchInputRef} type="text" />
+                    <input defaultValue={router.query.term} className="flex-grow w-full hover:outline-none focus:outline-none" ref={searchInputRef} type="text" />
                     <XIcon className='h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125'
                     onClick={() =>(searchInputRef.current.value = "")}
                     />
