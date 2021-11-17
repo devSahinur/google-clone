@@ -16,7 +16,7 @@ export default function Home() {
     const term = searchInputRef.current.value;
 
     if(!term) return;
-    router.push(`/search?trem=${term}`)
+    router.push(`/search?term=${term}`)
   }
 
 

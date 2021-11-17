@@ -14,7 +14,7 @@ function Header() {
         const term = searchInputRef.current.value;
 
         if(!term) return;
-        router.push(`/search?trem=${term}`)
+        router.push(`/search?term=${term}`)
     }
     return (
         <header className="sticky top-0 bg-white">

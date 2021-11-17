@@ -10,7 +10,7 @@ function Search({results}) {
     return (
         <div>
           <Head>
-              <title>{router.query.trem} - Google Search</title>
+              <title>{router.query.term} - Google Search</title>
           </Head>
           <Header />
             
