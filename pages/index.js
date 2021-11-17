@@ -24,6 +24,7 @@ export default function Home() {
     <div className="flex flex-col text-sm text-gray-700  h-screen">
       <Head>
         <title>Google</title>
+        <link rel="shortcut icon" href="https://www.google.com/favicon.ico" type="image/x-icon" />
       </Head>
 
       {/* Header */}

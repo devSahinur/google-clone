@@ -12,6 +12,7 @@ function Search({results}) {
         <div>
           <Head>
               <title>{router.query.term} - Google Search</title>
+              <link rel="shortcut icon" href="https://www.google.com/favicon.ico" type="image/x-icon" />
           </Head>
           <Header />
             
